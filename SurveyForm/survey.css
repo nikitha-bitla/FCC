@@ -1,0 +1,54 @@
+body {
+  background-image: linear-gradient(180deg, rgba(209, 165, 213, 0.5), rgba(61, 39, 63, 0.5)), url("https://media.istockphoto.com/id/1218588183/photo/student-girl-hand-filling-out-form-at-night.jpg?s=612x612&w=0&k=20&c=ivC_LbesX-sm15KdX7wt8avkLcemhuirmViQgqVTovM=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 17px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  min-width: 500px;
+  max-width: 700px;
+  background-color: #704563;
+  border-radius: 4%;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin: 10px 5px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1em auto;
+  width: 60%;
+}
+
+input, select, textarea {
+  display: block;
+  width:100%;
+  margin: 10px 1px;
+  min-height: 2em;
+  background-color: rgb(234, 222, 235);
+}
+
+input[name="teaching"], input[name="recom"] {
+  width: unset;
+  display: inline-block;
+  margin: 1px 10px 0 0;
+  vertical-align: middle;
+}
+
+label[for] {
+  display: block;
+}
+
+label[for="suggest"] {
+  margin-top: 4px;
+}
