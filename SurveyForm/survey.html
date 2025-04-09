@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+  <form id="survey-form" method="post" action="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder=" ex. John Smith" required></label>
+    <label for="email" id="email-label">Enter your e-mail address: <input type="email" id="email" placeholder=" ex. heythere123@gmail.com" required></label>
+    <label for="number" id="number-label">Enter your age: <input type="number" id="number" min="18" max="23" placeholder=" 20" required></label>
+
+    <label for="dropdown">Select your year of study: 
+      <select id="dropdown" required>
+        <option value="">Select an option</option>
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+      </select>
+    </label>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Teaching Effectiveness</legend>
+    <label>Which of the following teaching methods do you find effective?</label>
+    <label for="lectures">
+      <input type="checkbox" id="lectures" value="lectures" name="teaching" checked>Lectures
+    </label>
+    <label for="labs">
+      <input type="checkbox" id="labs" value="labs" name="teaching">Practical Labs
+    </label>
+    <label for="projects">
+      <input type="checkbox" id="projects" value="projects" name="teaching">Group Projects
+    </label>
+    <label for="sessions">
+      <input type="checkbox" id="sessions" value="sessions" name="teaching">Interactive Sessions
+    </label>
+    <label for="videos">
+      <input type="checkbox" id="videos" value="videos" name="teaching">Online Videos
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Recommendations</legend>
+    <label>Would you recommend this institution to other students?</label>
+    <label for="Y"><input type="radio" name="recom" id="Y" value="yes" checked/> Yes </label>
+    <label for="N"><input type="radio" name="recom" id="N" value="no" /> No </label>
+    <label for="MB"><input type="radio" name="recom" id="MB" value="maybe" /> Maybe </label>
+    <label for="suggest"> If not why?
+      <textarea id="suggest" rows="3" cols="50" placeholder="Drop your suggestions..." ></textarea>
+    </label>
+  </fieldset>
+  <input type="submit" id="submit" value="Submit">
+  </form>
+  </body>
+</html>
